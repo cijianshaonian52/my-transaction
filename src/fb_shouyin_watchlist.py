@@ -100,6 +100,7 @@ def update_widget_watchlist(pool):
         block.append('#   %s %s %d板断板 止损线%.2f'
                      % (r['断板日'], r['name'], r['断板前连板'], r['止损线(断板日最低)']))
     block.append(MARK_E)
+    os.makedirs(os.path.dirname(WLIST), exist_ok=True)
     open(WLIST, 'w', encoding='utf-8').write('\n'.join(out + block) + '\n')
 
 
