@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# IDE
+.idea/
+
+# 数据与产物（体积大、可再生成，不进版本库）
+adata/
+stockdb_csv/
+output/
+last_test*.js
+
+# 运行时状态
+desktop_widget/_widget_pos.json
+.trae-html-share-packages/
